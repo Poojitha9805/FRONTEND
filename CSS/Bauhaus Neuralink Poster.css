@@ -1,0 +1,153 @@
+:root {
+    --bg-color: #f2f0e9;
+    --bauhaus-red: #d63031;
+    --bauhaus-blue: #0984e3;
+    --cyber-cyan: #00f2ff;
+    --dark: #1e272e;
+}
+
+body {
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.poster-canvas {
+    width: 450px;
+    height: 600px;
+    background-color: var(--bg-color);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.5);
+    border: 1px solid #ddd;
+}
+
+/* Header Text */
+.header {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 10;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 0.9;
+    letter-spacing: -1px;
+    color: var(--dark);
+}
+
+.date {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Diagonal Black Line */
+.black-diagonal {
+    position: absolute;
+    width: 150%;
+    height: 20px;
+    background: var(--dark);
+    top: 100px;
+    left: -50px;
+    transform: rotate(-35deg);
+}
+
+/* The Aperture / Eye Construction */
+.aperture-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer-ring {
+    position: absolute;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+}
+
+.red {
+    width: 320px;
+    height: 320px;
+    background: var(--bauhaus-red);
+    top: 0;
+}
+
+.blue {
+    width: 300px;
+    height: 300px;
+    background: var(--bauhaus-blue);
+    bottom: 0;
+    right: 0;
+}
+
+.main-eye {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    background: var(--cyber-cyan);
+    border-radius: 50%;
+    border: 15px solid var(--dark);
+    overflow: hidden;
+    box-shadow: inset 0 0 50px rgba(0,0,0,0.3);
+    z-index: 5;
+}
+
+/* Geometric shutter pattern */
+.iris-pattern {
+    width: 100%;
+    height: 100%;
+    background: repeating-conic-gradient(
+    from 0deg,
+    transparent 0deg 30deg,
+    rgba(0,0,0,0.1) 30deg 60deg
+    );
+}
+
+.pupil {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: var(--dark);
+    border-radius: 50%;
+}
+
+/* Digital Scanlines */
+.scanning-lines {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(
+    rgba(255,255,255,0) 50%,
+    rgba(255,255,255,0.4) 50.5%,
+    rgba(255,255,255,0) 51%
+    );
+    background-size: 100% 10px;
+}
+
+/* Footer Text with Glow */
+.footer {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--dark);
+    text-shadow: 0 0 8px var(--cyber-cyan);
+}
