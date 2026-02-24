@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //spread 
+        let num=[1,2,3]
+        let num1=[...num]
+        console.log(num1)
+
+        let per={
+            name:"vivek",   
+            age: 30
+        }
+        let per1={...per}
+        console.log(per1)
+
+
+
+        //rest operator
+        function add(...num){
+            console.log(num)
+        }
+        add(3,45,67,3,4)
+
+
+
+        //d stucturing
+        //object literal syntax      manam 8 ways define cheyyachu
+        let person={
+            name:"vivek",   
+            age: 30,
+            place:"vizag",
+            class1:"cg1"
+
+        }
+         let{name,...perso}=person
+         console.log(perso)
+
+        // console.log(person.name)
+        // let {name:stuname,age,place,class1}=person //name:studentname rename
+        // console.log(stuname)
+
+        // let{ gender="male"}=person
+        // console.log(gender)
+        
+    </script>
+</body>
+</html>

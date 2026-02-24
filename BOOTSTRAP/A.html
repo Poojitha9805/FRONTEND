@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+    /* Make the inner container show items in a row */
+.muji-smooth-slider .carousel-inner {
+    display: flex !important;
+}
+
+/* Force 4 items to show at once (100% / 4 = 25%) */
+.muji-smooth-slider .carousel-item {
+    flex: 0 0 25%; 
+    display: block !important;
+    margin-right: 0;
+    transition: transform 0.6s ease-in-out; /* Smooth slide speed */
+}
+
+/* Styling the cards to match MUJI */
+.muji-product-card {
+    padding: 0 10px;
+    text-align: center;
+}
+
+.muji-product-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background-color: #f6f6f6;
+}
+
+.product-label {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 15px;
+    color: #000;
+}
+</style>
+<body>
+    <div class="products-slider-section">
+    <div class="container-fluid px-5">
+        <h3 class="section-title text-center mb-4">Pens - Fan Favourite</h3>
+        
+        <div id="pensCarousel" class="carousel slide muji-smooth-slider" data-bs-ride="carousel" data-bs-interval="15">
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                    <div class="muji-product-card">
+                        <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/5234/applications/64b0e3acd9cab4c83a10d8f5/theme/pictures/free/resize-w:360/theme-image-1765528845555.jpeg" alt="Compact Pen">
+                        <p class="product-label">Compact Pen</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="muji-product-card">
+                        <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/5234/applications/64b0e3acd9cab4c83a10d8f5/theme/pictures/free/resize-w:360/theme-image-1765528910875.jpeg" alt="Oil Pen">
+                        <p class="product-label">Oil Pen</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="muji-product-card">
+                        <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/5234/applications/64b0e3acd9cab4c83a10d8f5/theme/pictures/free/resize-w:360/theme-image-1765533872634.jpeg" alt="Fountain Pen">
+                        <p class="product-label">Fountain Pen</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="muji-product-card">
+                        <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/5234/applications/64b0e3acd9cab4c83a10d8f5/theme/pictures/free/resize-w:360/theme-image-1765534158827.jpeg" alt="Gel Pen">
+                        <p class="product-label">Gel Pen</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="muji-product-card">
+                        <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/5234/applications/64b0e3acd9cab4c83a10d8f5/theme/pictures/free/resize-w:360/theme-image-1765534203463.jpeg" alt="Refills">
+                        <p class="product-label">Refills</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <h3 class="section-title text-center mb-4">Everything Garments</h3>
+        
+        <div id="pensCarousel" class="carousel slide muji-smooth-slider" data-bs-ride="carousel" data-bs-interval="15">
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                    <div class="muji-product-card">
+                        <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/5234/applications/64b0e3acd9cab4c83a10d8f5/theme/pictures/free/resize-w:360/theme-image-1738647220589.jpeg" alt="Bags">
+                        <p class="product-label">Bags</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="muji-product-card">
+                        <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/5234/applications/64b0e3acd9cab4c83a10d8f5/theme/pictures/free/resize-w:360/theme-image-1743508404503.jpeg" alt="Accessories">
+                        <p class="product-label">Accessories</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="muji-product-card">
+                        <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/5234/applications/64b0e3acd9cab4c83a10d8f5/theme/pictures/free/resize-w:360/theme-image-1743508517708.jpeg" alt="Pajamas & Lounge wear">
+                        <p class="product-label">Pajamas & Lounge wear</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="muji-product-card">
+                        <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/5234/applications/64b0e3acd9cab4c83a10d8f5/theme/pictures/free/resize-w:360/theme-image-1743507250054.jpeg" alt="Menswear">
+                        <p class="product-label">Menswear</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="muji-product-card">
+                        <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/5234/applications/64b0e3acd9cab4c83a10d8f5/theme/pictures/free/resize-w:360/theme-image-1734504011284.png" alt="Womenswear">
+                        <p class="product-label">Womenswear</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="muji-product-card">
+                        <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/5234/applications/64b0e3acd9cab4c83a10d8f5/theme/pictures/free/resize-w:360/theme-image-1734504060856.png" alt="Kidswear">
+                        <p class="product-label">Kidswear</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="muji-product-card">
+                        <img src="https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/company/5234/applications/64b0e3acd9cab4c83a10d8f5/theme/pictures/free/resize-w:360/theme-image-1743582580963.jpeg" alt="Innerwear">
+                        <p class="product-label">Innerwear</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
